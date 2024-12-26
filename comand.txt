@@ -1,0 +1,51 @@
+1.http://127.0.0.1:3000/product.
+
+{
+  "name": "New One",
+  "price": 33.99
+}
+{
+  "name": "New Second",
+  "price": 22.99
+}
+
+{
+  "message": "Product created successfully",
+  "product": {
+    "_id": "676d812f6d820c49c85fa303",
+    "name": "New One",
+    "price":  33.99
+  }
+}
+{
+  "message": "Product created successfully",
+  "product": {
+    "_id": "676d812f6d820c49c85fa303",
+    "name": "New Second",
+    "price":  22.99
+  }
+}
+
+2.  http://127.0.0.1:3000/product/676d812f6d820c49c85fa303
+{
+    "_id": "676d812f6d820c49c85fa303",
+    "name": "New one",
+    "price": 22.99,
+    "__v": 0
+}
+
+3. http://127.0.0.1:3000/products
+[
+    {
+        "_id": "676d812f6d820c49c85fa303",
+        "name": "New One",
+        "price": 33.99,
+        "__v": 0
+    }
+    {
+        "_id": "676d812f6d820c49c85fa303",
+        "name": "New Second",
+        "price": 22.99,
+        "__v": 0
+    }
+]
